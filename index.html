@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin DashBoard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css"/>  
+
+</head>
+<body>
+
+    <!-- start navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"  data-bs-target="#offcanvasExample"></span>
+              </button>
+          <a class="navbar-brand text-white" href="#">My Dashboard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <form class="d-flex  ms-auto search-margin">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                    <button class="btn btn-primary text-white " type="button" id="button-addon2">
+                        <!-- <i class="bi bi-person-circle"></i> -->
+                        <i class="bi bi-search"></i>
+                    </button>
+                  </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- End navbar  -->
+
+
+    <!-- start side bar -->
+      <div class="offcanvas offcanvas-start bg-dark text-white tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="navbar-dark">
+            <ul class="navbar-nav">
+                <li>
+                    <div class="text-uppercase text-muted fw-bold p-2">
+                          Core
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link active mx-3" >
+
+                        <span>
+                            <i class="bi bi-speedometer2"></i>
+                        </span>
+                        <span>
+                            Dash Board
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <div class="text-uppercase text-muted fw-bold p-2">
+                          Interface
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link active mx-3" >
+
+                        
+                        <span>
+                            <a class="text-light collapseLink" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                               <div>
+                                <i class="bi bi-layout-split mx-2"></i>Layout
+                               </div>
+                               <i class="bi bi-chevron-down"></i>
+                              </a>
+                              <div class="collapse" id="collapseExample">
+                                <a href="#" class="mx-5 text-secondary interalLinkdec" >Internal Link</a>
+                              </div>
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <div class="text-uppercase text-muted fw-bold p-2">
+                         Addons
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link active mx-3" >
+
+                        <span>
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </span>
+                        <span>
+                           Charts
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link active mx-3" >
+
+                        <span>
+                            <i class="bi bi-table"></i>
+                        </span>
+                        <span>
+                           tables
+                        </span>
+
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+      </div>
+
+
+
+    <!-- End side bar -->
+
+
+
+    <!-- start main -->
+<div class="main-section">
+    <div class="container-fluid mx-2">
+        <div class="row cards">
+            <div class="col-sm-12">
+                <h3 class="text-secondary m-3">Dash Board</h3>
+            </div>
+
+
+            
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        
+                        <div class="card-body">
+                        <h5 class="card-title">Primary Card</h5>
+                        </div>
+                        <div class="card-footer ">
+                            <h6>View Details</h6>
+                            <i class="bi bi-chevron-right  "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                        
+                        <div class="card-body">
+                        <h5 class="card-title">Warning Card</h5>
+                        </div>
+                        <div class="card-footer ">
+                            <h6>View Details</h6>
+                            <i class="bi bi-chevron-right  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                        
+                        <div class="card-body">
+                        <h5 class="card-title">Success Card</h5>
+                        </div>
+                        <div class="card-footer ">
+                            <h6>View Details</h6>
+                            <i class="bi bi-chevron-right  "></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                        
+                        <div class="card-body">
+                        <h5 class="card-title">Danger Card</h5>
+                        </div>
+                        <div class="card-footer ">
+                            <h6>View Details</h6>
+                            <i class="bi bi-chevron-right  "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+      
+          
+   </div>
+
+   <div class="container-fluid">
+    <div class="row my-5 g-0 charts">
+        <div class="col-sm-12">
+            <h3 class="text-secondary m-3"> My charts</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 my-3">
+            <canvas id="myChart" width="400" height="400"></canvas>
+
+        </div>
+        <div class="col-md-4 offset-md-4 col-sm-12 my-3">
+            <canvas id="myChart2" width="400" height="400"></canvas>
+        </div>
+    </div>
+    
+  
+   </div>
+
+  
+
+
+
+</div>
+
+    <!-- End main -->
+
+
+ 
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/node_modules/chart.js/dist/chart.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+:root{
+    --navbarHeight:70px;
+    --sideBarWidth:268.8px;
+}
+
+
+@media(max-width:992px){
+    .search-margin{
+        margin: 15px 0px;
+    }
+    .main-section{
+        margin-top:var(--navbarHeight);
+        margin-left:0px;
+    }
+    .cards{
+        justify-content: center;
+    }
+    
+}
+
+@media(min-width:992px){
+
+    body{
+        overflow: auto !important;
+    }
+    .offcanvas-backdrop::before{
+        display:none;
+    }
+    .offcanvas{
+        top:var(--navbarHeight);
+        height:calc(100%- var(--navbarHeight));
+        visibility: visible !important;
+        transform: none;
+        width:20%;
+     }
+     .main-section{
+        margin-top:var(--navbarHeight);
+        margin-left:var(--sideBarWidth);
+    }
+}
+.collapseLink{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding:10px 20px;
+}
+.interalLinkdec{
+    text-decoration: none;
+}
+
+
+
+.card-footer{
+    display:flex;
+    justify-content: space-between;
+}
+.main-section{
+  overflow-x: hidden;
+}
